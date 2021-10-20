@@ -1,0 +1,46 @@
+.relative {
+	position: relative;
+	width:100%;
+	height: 1000px;
+	background-image: url(../img/galaxy.jpg);
+}
+.galaxy {
+	 position: absolute;
+    top: 5px;
+    width: 200px;
+    height: 200px;
+    animation: galaxy 50s infinite alternate;
+}
+@keyframes galaxy {
+   0%{left: 0px;}
+   20%{left:180px; transform: rotate(90deg);}
+   40%{left: 360px; transform: rotate(180deg);}
+   60%{left: 600px; top: 300px; transform: rotate(270deg);}
+   80%{left: 1000px; transform: rotate(360deg);}
+   100%{left: 1600px; transform: rotate(0deg);}
+}
+.mlkwy {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    top: 0px;
+    left: 6px;
+    animation: mlkwy 90s infinite alternate linear;
+}
+@keyframes mlkwy {
+   0%{left: 10px;}
+   100%{left: 200px;}
+}
+.cosmonavt {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 300px;
+    right: 1000px;
+    animation: cosmonavt 80s infinite alternate;
+}
+@keyframes cosmonavt {
+   0%{bottom: 500px;right: 400px; transform: rotate(90deg);}
+   50%{bottom: 500px;right: 900px;transform: rotate(180deg);}
+   75%{right: 300px; bottom: 20px;transform: rotate(360deg);}
+}
